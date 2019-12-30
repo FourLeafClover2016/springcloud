@@ -1,3 +1,17 @@
 server:
   servlet:
     context-path: /demo2
+# 日志配置，也可使用java配置的方式为feign配置日志
+#feign:
+ # client:
+  #  config:
+   #   spring-cloud-demo1:
+    #    loggerLevel: full
+
+logging:
+  level:
+    com:
+      hwx:
+        demo:
+          feign:
+            UserFeignClient: debug

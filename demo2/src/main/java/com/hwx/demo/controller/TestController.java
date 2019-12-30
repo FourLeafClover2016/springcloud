@@ -15,7 +15,7 @@ public class TestController {
     @Autowired
     private RestTemplate restTemplate;
 
-    //@Autowired
+    @Autowired
     private Demo1Client demo1Client;
 
     @GetMapping("/test")

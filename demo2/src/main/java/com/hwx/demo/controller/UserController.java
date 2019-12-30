@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
  * 手动创建Feign，FeignClientsConfiguration是springCloud为feign默认提供的配置类
  * 手动创建Feign需要在feign的接口上取出@FeignClient注解，取出启动类上的@EnableFeignClient
  */
-@Import(FeignClientsConfiguration.class)
-@RestController
+//@Import(FeignClientsConfiguration.class)
+//@RestController
 public class UserController {
     private UserFeignClient adminClient;
 

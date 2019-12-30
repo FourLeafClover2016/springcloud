@@ -47,6 +47,11 @@
             <artifactId>nacos-client</artifactId>
             <version>1.1.4</version>
         </dependency>
+        <!-- Spring Securit依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
 
 
     </dependencies>

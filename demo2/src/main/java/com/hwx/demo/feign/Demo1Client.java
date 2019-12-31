@@ -1,5 +1,6 @@
 package com.hwx.demo.feign;
 
+import com.hwx.demo.config.FeignLogConfig;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 

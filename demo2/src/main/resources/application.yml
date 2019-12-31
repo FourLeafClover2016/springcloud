@@ -10,8 +10,4 @@ server:
 
 logging:
   level:
-    com:
-      hwx:
-        demo:
-          feign:
-            UserFeignClient: debug
+    com.hwx.demo.feign.*: debug

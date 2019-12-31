@@ -11,3 +11,6 @@ server:
 logging:
   level:
     com.hwx.demo.feign.*: debug
+feign:
+  hystrix:
+    enabled: true

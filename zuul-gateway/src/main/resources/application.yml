@@ -2,3 +2,9 @@ server:
   port: 8800
   servlet:
     context-path: /zuul
+#
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

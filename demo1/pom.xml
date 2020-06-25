@@ -7,6 +7,7 @@
         <groupId>com.com.hwx</groupId>
         <version>v1.0.0</version>
     </parent>
+    <packaging>war</packaging>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>demo1</artifactId>

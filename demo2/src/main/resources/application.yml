@@ -11,6 +11,12 @@ server:
 logging:
   level:
     com.hwx.demo.feign.*: debug
+# feign 使用OKHttp 连接池
 feign:
   hystrix:
     enabled: true
+  okhttp:
+    enabled: true
+  httpclient:
+    max-connections: 200
+    max-connections-per-route: 50

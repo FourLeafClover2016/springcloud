@@ -8,7 +8,7 @@
         <version>v1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <artifactId>zuul-gateway</artifactId>
     <dependencies>
         <!-- nacos 依赖 -->

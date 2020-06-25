@@ -8,7 +8,7 @@
         <version>v1.0.0</version>
     </parent>
     <artifactId>myauth</artifactId>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <dependencies>
         <!-- nacos 依赖 -->
         <dependency>

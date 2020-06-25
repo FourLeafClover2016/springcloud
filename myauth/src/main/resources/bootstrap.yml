@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: spring-cloud-myauth
+  cloud:
+    nacos:
+      config:
+        server-addr: nacos.server.com:8848
+        file-extension: yaml
+        #prefix: spring-cloud-demo1
+      discovery:
+        server-addr: nacos.server.com:8848
+        file-extension: yaml

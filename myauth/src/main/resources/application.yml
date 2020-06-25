@@ -1,0 +1,12 @@
+server:
+  servlet:
+    context-path: /myauth
+  port: 6666
+spring:
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/demo?useUnicode=true&characterEncoding=utf-8
+    username: postgres
+    password: passwd
+    driver-class-name: org.postgresql.Driver
+  mybatis:
+  mapper-locations: classpath:mapper/*.xml

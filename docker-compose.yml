@@ -1,0 +1,22 @@
+version: "2.0"
+services:
+  demo1:
+    container_name: demo1
+    restart: always
+    build: ./demo1
+    ports:
+      - "18001:8001"
+  demo2:
+    container_name: demo2
+    restart: always
+    build: ./demo2
+    ports:
+      - "18888:8888"
+  zuul:
+    container_name: zuul
+    restart: always
+    build: ./zuul-dateway
+    ports:
+      - "18801:8801"
+
+

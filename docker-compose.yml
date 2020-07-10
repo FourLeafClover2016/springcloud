@@ -15,7 +15,7 @@ services:
   zuul:
     container_name: zuul
     restart: always
-    build: ./zuul-dateway
+    build: ./zuul-gateway
     ports:
       - "18801:8801"
 

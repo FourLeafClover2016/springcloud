@@ -1,4 +1,4 @@
-ersion: "1"
+version: "1"
 services:
   demo1:
     build: /opt/project/springcloud/demo1/docker/

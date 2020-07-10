@@ -2,15 +2,15 @@ ersion: "1"
 services:
   demo1:
     build: /opt/project/springcloud/demo1/docker/
-      ports:
-        - "18001:8001"
+    ports:
+      - "18001:8001"
   demo2:
     build: /opt/project/springcloud/demo2/docker/
-      ports:
-        - "18888:8888"
+    ports:
+      - "18888:8888"
   zuul:
     build: /opt/project/springcloud/zuul-dateway/docker/
-      ports:
-        - "18801:8801"
+    ports:
+      - "18801:8801"
 
 

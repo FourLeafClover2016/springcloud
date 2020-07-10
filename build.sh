@@ -5,12 +5,16 @@ git pull
 cantionor=("demo1", "demo2", "zuul")
 for element in ${cantionor[*]}
 do
-  cantion=`docker ps -a | grep $element | awk '{print$1}'`
+  cantion=`docker-compose ps -a | grep $element | awk '{print$1}'`
   if  [ -n "$cantion" ] ;then
-    docker stop $cantion
-    docker rm $cantion
+    docker-compose stop $cantion
+    docker-compose rm $cantion
   fi
-  docker rmi $element
+  image=`docker-compose ps -a | grep $element | awk '{print$1}'`
+  if  [ -n "$image" ] ;then
+    ddocker rmi $image
+  fi
+
 done
 # 更新代码
 cd /opt/project/springcloud

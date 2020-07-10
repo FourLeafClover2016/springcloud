@@ -5,14 +5,14 @@ git pull
 cantionor=("demo1", "demo2", "zuul")
 for element in ${cantionor[*]}
 do
-  cantion=`docker-compose ps  | grep $element | awk '{print$1}'`
+  cantion=`docker ps -a | grep $element | awk '{print$1}'`
   if  [ -n "$cantion" ] ;then
-    docker-compose stop -f $cantion
-    docker-compose rm -f $cantion
+    docker stop -f $cantion
+    docker rm  $cantion
   fi
-  image=`docker-compose images| grep $element | awk '{print$1}'`
+  image=`docke images| grep $element | awk '{print$1}'`
   if  [ -n "$image" ] ;then
-    docker-compose rmi -f $image
+    docker rmi  $image
   fi
 
 done

@@ -7,8 +7,8 @@ for element in ${cantionor[*]}
 do
   cantion=`docker-compose ps  | grep $element | awk '{print$1}'`
   if  [ -n "$cantion" ] ;then
-    docker stop $cantion
-    docker rm $cantion
+    docker-compose stop $cantion
+    docker-compose rm $cantion
   fi
   image=`docker-compose images| grep $element | awk '{print$1}'`
   if  [ -n "$image" ] ;then

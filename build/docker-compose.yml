@@ -1,15 +1,15 @@
 version: "2.0"
 services:
   demo1:
-    build: /opt/project/springcloud/demo1/docker/
+    build: /opt/project/springcloud/demo1/docker/docker-compose.yml
     ports:
       - "18001:8001"
   demo2:
-    build: /opt/project/springcloud/demo2/docker/
+    build: /opt/project/springcloud/demo2/docker/docker-compose.yml
     ports:
       - "18888:8888"
   zuul:
-    build: /opt/project/springcloud/zuul-dateway/docker/
+    build: /opt/project/springcloud/zuul-dateway/docker/docker-compose.yml
     ports:
       - "18801:8801"
 
